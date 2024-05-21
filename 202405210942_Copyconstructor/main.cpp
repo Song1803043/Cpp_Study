@@ -69,7 +69,7 @@ int main()
 
 	cout << "array2 °´Ã¼" << endl;
 	DynamicArray array2(array);
-	
+
 	for (int i = 0; i < array.GetSize(); i++)
 	{
 		cout << "array2[" << i << "] = " << array.GetIndex(i) << endl;
@@ -79,7 +79,7 @@ int main()
 
 	for (int i = 0; i < array.GetSize(); i++)
 	{
-		array.SetIndex(i, i*2);
+		array.SetIndex(i, i * 2);
 	}
 
 	for (int i = 0; i < array.GetSize(); i++)

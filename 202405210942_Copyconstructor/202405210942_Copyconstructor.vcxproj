@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5dd30942-7f06-4922-a656-0113ece32618}</ProjectGuid>
-    <RootNamespace>My202405210942</RootNamespace>
+    <ProjectGuid>{2ec092f3-cabe-44d3-8c5a-9c22644430b9}</ProjectGuid>
+    <RootNamespace>My202405210942Copyconstructor</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>202405210942_Copyconstructor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

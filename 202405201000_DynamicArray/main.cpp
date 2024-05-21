@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Monster 
+class Monster
 {
 private:
     string _name;
@@ -30,12 +30,12 @@ public:
         cout << _name << "생성자" << endl;
     }
 
-    ~Monster() 
+    ~Monster()
     {
         cout << _name << "소멸자" << endl;
     }
 
-    void Init(string name, int health, int attack, int defense) 
+    void Init(string name, int health, int attack, int defense)
     {
         _name = name;
         _health = health;
@@ -43,17 +43,17 @@ public:
         _defense = defense;
     }
 
-    void Attack() 
+    void Attack()
     {
         cout << _name << "이 공격한다." << endl;
     }
 
-    void Defense() 
+    void Defense()
     {
         cout << _name << "이 방어한다." << endl;
     }
 
-    void Info() 
+    void Info()
     {
         cout << "몬스터명: " << _name << endl;
         cout << "생명력: " << _health << endl;
@@ -63,7 +63,7 @@ public:
 };
 
 // 객체 배열
-int main() 
+int main()
 {
     // 동적 배열 생성
     int count = 0;
@@ -74,14 +74,14 @@ int main()
 
     Monster** ppMonsArray = new Monster * [count];   // Monster* 저장하는 동적배열
 
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
         sprintf(buff, "DynamicMonster_%d", i);
         ppMonsArray[i] = new Monster(buff, i * 10, i * 3, i * 2);   // 몬스터 객체를 각각에 생성하여
                                                      // Monster* 배열에 연결한다.
     }
 
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
         ppMonsArray[i]->Attack();
     }
@@ -91,17 +91,17 @@ int main()
     ppMonsArray[2] = NULL;
 
 
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
-        if (ppMonsArray[i] != NULL) 
+        if (ppMonsArray[i] != NULL)
         {
             ppMonsArray[i]->Defense();
         }
     }
 
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
-        if (ppMonsArray[i] != NULL) 
+        if (ppMonsArray[i] != NULL)
         {
             ppMonsArray[i]->Info();
         }
@@ -109,16 +109,16 @@ int main()
     }
 
     // 몬스터 생성
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
-        if (ppMonsArray[i] == NULL) 
+        if (ppMonsArray[i] == NULL)
         {
             ppMonsArray[i] = new Monster("NewMonster", 100, 40, 10);
         }
     }
 
     // 공격명령 일괄처리
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
         ppMonsArray[i]->Attack();
     }
@@ -126,9 +126,9 @@ int main()
 
     // Monster* 배열에 연결된 각각의 Monster 객체를 반납처리
     // 몬스터 객체 반납처리
-    for (int i = 0; i < count; i++) 
+    for (int i = 0; i < count; i++)
     {
-        if (ppMonsArray[i] != NULL) 
+        if (ppMonsArray[i] != NULL)
         {
             delete(ppMonsArray[i]);
             ppMonsArray[i] = NULL;

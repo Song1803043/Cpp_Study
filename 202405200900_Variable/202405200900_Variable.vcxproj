@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4b1ad845-f80f-4230-9f07-fd3007b9d8e1}</ProjectGuid>
-    <RootNamespace>df</RootNamespace>
+    <ProjectGuid>{5924eab2-5904-43ca-96ad-a7d94a83696d}</ProjectGuid>
+    <RootNamespace>My202405200900Variable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>202405211015_ConstFunction</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

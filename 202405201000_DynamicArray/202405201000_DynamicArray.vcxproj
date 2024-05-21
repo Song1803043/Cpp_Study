@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{87e08f99-6cee-4e0d-8970-1a5c7db9f931}</ProjectGuid>
-    <RootNamespace>My202405200900</RootNamespace>
+    <ProjectGuid>{7e60001d-b524-446c-bb4a-a4141e5dff68}</ProjectGuid>
+    <RootNamespace>My202405201000DynamicArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>202405200900_Variable</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
