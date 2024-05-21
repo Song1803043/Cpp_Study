@@ -65,7 +65,7 @@ public:
 // 객체 배열
 int main() 
 {
-    // 동적 배열 새성
+    // 동적 배열 생성
     int count = 0;
     char buff[30];
 
