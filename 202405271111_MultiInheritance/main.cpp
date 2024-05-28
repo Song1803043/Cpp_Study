@@ -4,6 +4,7 @@
 using namespace std;
 
 // 다중 상속
+// 모호함이 발생하는 경우에는 정확하게 호출 범위를 지정해주시면 됩니다.
 
 class Parent1
 {
@@ -47,7 +48,17 @@ public:
 
 int main()
 {
+    Child child(10, 20, 30, 40);
 
+    child.Parent1::ShowInfo(); 
+    child.Parent2::_value = 100;
+    child.Parent2::ShowInfo();
+
+    Parent1& ref1 = child;
+    ref1.ShowInfo();
+
+    Parent2& ref2 = child;
+    ref2.ShowInfo();
 
     return 0;
 }
