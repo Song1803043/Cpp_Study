@@ -15,40 +15,15 @@ using namespace std;
 
 // 포함, 참조, 의존적관계
 
-class Coffee
-{
-private:
-	bool _temp;
-
-public:
-	Coffee(bool temp)
-		: _temp(temp) {}
-
-	bool GetTemp()
-	{
-		if (GetTemp())
-		{
-			cout << "ice";
-		}
-		else
-		{
-			cout << "hot";
-		}
-	}
-};
-
-class Americano : public Coffee
+class Americano
 {
 private:
 	string _name;
 
 public:
-	Americano(bool temp)
-		: _name("아메리카노"), Coffee(temp) 
-	{
-		GetTemp();
-	}
-
+	Americano()
+		: _name("아메리카노") {}
+	
 	string GetName()
 	{
 		return _name;
@@ -161,7 +136,7 @@ public:
 
 int main()
 {
-	Americano americano(0);
+	Americano americano;
 	Latte latte;
 	Caramel caramel;
 	Barista bari;

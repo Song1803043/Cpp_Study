@@ -4,7 +4,7 @@
 using namespace std;
 
 // UpCasting, DownCasting
-// UpCasting : 상속관계에서 부몬의 데이터 타입으로 자식을 받는것
+// UpCasting : 상속관계에서 부모의 데이터 타입으로 자식을 받는것
 // 참조타입/ 포인터
 
 class Parent
