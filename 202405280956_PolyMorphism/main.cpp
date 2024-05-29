@@ -15,19 +15,45 @@ using namespace std;
 
 // 포함, 참조, 의존적관계
 
-class Americano
+class Coffee
+{
+private:
+	bool _temp;
+
+public:
+	Coffee(bool temp)
+		: _temp(temp) {}
+
+	bool GetTemp()
+	{
+		if (GetTemp())
+		{
+			cout << "ice";
+		}
+		else
+		{
+			cout << "hot";
+		}
+	}
+};
+
+class Americano : public Coffee
 {
 private:
 	string _name;
 
 public:
-	Americano()
-		: _name("아메리카노") {}
+	Americano(bool temp)
+		: _name("아메리카노"), Coffee(temp) 
+	{
+		GetTemp();
+	}
 
 	string GetName()
 	{
 		return _name;
 	}
+
 };
 
 class Latte
@@ -135,7 +161,7 @@ public:
 
 int main()
 {
-	Americano americano;
+	Americano americano(0);
 	Latte latte;
 	Caramel caramel;
 	Barista bari;
